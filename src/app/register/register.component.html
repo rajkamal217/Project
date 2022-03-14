@@ -1,0 +1,11 @@
+ 
+
+<form method="post" (ngSubmit)="register()" #myreg="ngForm">
+ User_Name:<input type="text"name="username" [(ngModel)]="value.username">
+ password: <input type="password" name="password" [(ngModel)]="value.password">
+ Confirm password:<input type="password" name="confirmpassword" [(ngModel)]="value.confirmpassword">
+ Mobilenumber:<input type="text" name="mobilenumber"[(ngModel)]="value.mobilenumber">
+ Email:<input type="email" name="email" [(ngModel)]="value.email">
+ <input type="submit" name="register">
+ 
+</form>

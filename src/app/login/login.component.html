@@ -1,0 +1,11 @@
+
+
+  <router-outlet></router-outlet>
+  <form (ngSubmit)="addprd()" #addform="ngForm">
+    Productid:<input type="text" name="pid" [(ngModel)]="add.pid">
+     Productname:<input type="text"name="pname"[(ngModel)] ="add.pname">
+    Productprice:<input type="text"name="pprice"[(ngModel)]="add.pprice">
+    Description:<input type="text"name="memory"[(ngModel)]="add.memory">
+    Image:<input type="text"name="image"[(ngModel)]="add.image"> 
+    <input type="submit">
+  </form>

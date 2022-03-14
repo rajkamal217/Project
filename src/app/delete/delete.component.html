@@ -1,0 +1,29 @@
+<form (ngSubmit)="deletesearch()" #deletesearchform="ngForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Product Id</mat-label>
+        <input matInput name="pid"[(ngModel)]="prd.pid">
+        </mat-form-field>
+    <input type="submit" value="submit">
+</form>
+
+
+
+<form *ngIf="pro!=''" (ngSubmit)="delete()" #deleteform="ngForm">
+    <mat-form-field>
+        <mat-label>Product Name</mat-label>
+        <input matInput name="pname" [(ngModel)]="pro.pname">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input matInput name="pprice" [(ngModel)]="pro.pprice">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput name="pmemory" [(ngModel)]="pro.memory">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Image</mat-label>
+        <input matInput name="pimg" [(ngModel)]="pro.image">
+    </mat-form-field> 
+    <input type="submit" value="submit">
+</form>
